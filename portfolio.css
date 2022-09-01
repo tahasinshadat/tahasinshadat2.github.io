@@ -1,0 +1,187 @@
+/* *{
+    border: 2px solid red;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+/* NAV BAR */
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+    background: rgb(54, 168, 185);
+}
+
+#navbar {
+    background: black;
+    color: white;
+    font-size: 14px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+#nav a { 
+    color: white;
+    opacity: 0.75;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: none;
+}
+
+#nav a:hover {
+    opacity: 1;
+}
+
+#nav a::before {  
+    content: "";   
+    background-color: transparent;   
+    height: 4px;   
+    width: 0;   
+    display: block;   
+    transition: width 0.5s ease, background-color 0.5s ease; 
+}  
+
+#nav a:hover::before {   
+    width: 100%;   
+    background-color: #c7c5c5;  
+}
+
+#name_nav {
+    margin-right: 30%;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/* END OF NAV BAR */
+
+/* TOP BUTTON */
+#back_to_top_btn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    background-color: rgba(56, 56, 56, 0.8);
+    opacity: 0.7;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 70px;
+    width: 70px;
+    height: 70px;
+    font-size: 100;
+}
+
+#back_to_top_btn:hover{
+    opacity: 1;
+}
+
+/* END OF TOP BUTTON */
+
+/* CONTACT INFO/FOOTER */
+
+#footer {
+    margin-top: -22.5px;
+    background: rgb(35, 85, 90);
+    margin-bottom: -22.5px;
+    text-align: center;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+}
+
+#contact a {
+    color: white;
+    padding: 10px;
+    opacity: 1;
+}
+
+#contact a:hover {
+    color: rgb(45, 153, 163);
+}
+
+/* END OF CONTACT INFO/FOOTER */
+
+#banner {
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(91, 80, 84, .4)), url("./portfolio_images/banner.webp") no-repeat center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#header {
+    margin-top: 215px;
+}
+
+#banner_description {
+    margin-top: -75px;
+}
+
+u {
+    color: rgb(255, 0, 0);
+}
+
+span {
+    color: white;
+}
+
+#title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-name {
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.project {
+    margin: 1%;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+    border: 5px solid rgb(91, 80, 84);
+    background: rgb(157, 230, 236);
+    margin-top: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+.img-column {
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.description-column {
+    flex: 60%;
+}
+
+.spacer {
+    flex: 10%;
+}
+
+.column-img img{
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    border: 3px solid rgb(91, 80, 84);
+    border-radius: 20px;
+    margin: 20px;
+}
