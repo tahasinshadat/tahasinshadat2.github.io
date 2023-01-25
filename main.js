@@ -43,6 +43,10 @@ let adjectiveText = () => {
 }
 
 window.onload = () => {
+  if(!window.location.hash) {
+    window.location = window.location + '#';
+    window.location.reload();
+  }
   adjectiveText();
   
   setInterval(() => {
