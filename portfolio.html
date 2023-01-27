@@ -4,66 +4,474 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
     <script defer src="main_portfolio.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/6a2a583ad9.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div id="navbar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3 py-2 bg_color">
+        <a href="#" class="navbar-brand">Tahasin Shadat</a>
 
-        <div id="nav">
-            <h2 id="name_nav">TAHASIN SHADAT</h2>
-            <h2><a href="index.html">HOME <i class="fa fa-home" style="font-size:16px"></i></a></h2>
-            <h2><a href="portfolio.html">PORTFOLIO <i class="fa fa-suitcase" style="font-size:16px"></i></a></h2>
-            <h2><a href="https://www.linkedin.com/in/tahasin-shadat-76aabb241/" target="_blank">LINKEDIN <i class="fa fa-linkedin-square" style="font-size:16px"></i></a></h2>
-            <h2><a href="https://github.com/tahasinshadat" target="_blank">GITHUB <i class="fa fa-github" style="font-size:16px"></i></a></h2>
-            <h2><a href="https://www.instagram.com/the_tahasin/?hl=en" target="_blank">INSTAGRAM <i class="fa fa-instagram" style="font-size:16px"></i></a></h2>
-            <h2><a href="#" target="_blank">RESUME <i class="fa fa-file-text-o" style="font-size:16px"></i></a></h2>
-            <h2><a href="mailto:tahasinshadat@gmail.com" target="_blank">MAIL <i class="fa fa-envelope" style="font-size:16px"></i></a></h2>
-       </div>
-  
-    </div>
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse hoverer" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link px-4"><i class="fa fa-home" style="font-size:16px"></i> HOME </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-4"><i class="fa fa-suitcase" style="font-size:16px"></i> PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/tahasin-shadat-76aabb241/" class="nav-link px-4"><i class="fa fa-linkedin-square" style="font-size:16px"></i> LINKEDIN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/tahasinshadat" class="nav-link px-4"><i class="fa fa-github" style="font-size:16px"></i> GITHUB</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/the_tahasin/?hl=en" class="nav-link px-4"><i class="fa fa-instagram" style="font-size:16px"></i> INSTAGRAM</a>
+                </li>
+                <li class="nav-item">
+                   <a href="resume/Tahasin_Shadat_ASC_Resume.pdf" class="nav-link px-4"><i class="fa fa-file-text-o" style="font-size:16px"></i> RESUME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:tahasinshadat@gmail.com" class="nav-link px-4"><i class="fa fa-envelope" style="font-size:16px"></i> MAIL</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
 
     <div id="banner">
-        <div>
-            <h1 id="header">PORTFOLIO</h1>
-            <h5 id="banner_description">View My 
-                <u><em><span
-                   class="txt-rotate"
-                   data-period="2000"
-                   data-rotate='[ "Projects", "Achievements", "Experiences", "Awards", "Certifications" ]'>
-                </span></em></u>
-            </h5>
+        <h1 class="text-center pt-5" id="header">PORTFOLIO</h1>
+        <div id="middle">
+            <h2>View My</h2>
+            <div id="down"><i><em><h2><span class="text_1">Projects</span><span class="text_2">Certifications</span></h2></em></i></div>
         </div>
     </div>
 
 
-    <div id="projects">
-        <h1 id ='title'>Projects</h1>
 
-        <div class="project">
-            <h1 class="project-name">Fitness101 - Demo (Hosted Website)</h1>
+    <h1 class="text-center p-2 bg-secondary mb-0"> &lt--Projects--&gt </h1>
+    <!-- Fitness 101 -->
+    <section id="project" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
 
-            <div class="row">
-
-                <div class="img-column column-img">
-                    <img src="images/fitness101-portfolio-img.png">
+                <div class="col-md">
+                    <img src="" class="img-fluid" alt="" />
                 </div>
 
-                <div class="spacer"></div>
+                <div class="col-md p-5">
+                    <h2>Fitness 101 Demo</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Similique deleniti possimus magnam corporis ratione facere!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                        reiciendis eius autem eveniet mollitia, at asperiores suscipit
+                        quae similique laboriosam iste minus placeat odit velit quos,
+                        nulla architecto amet voluptates?
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right"></i> Visit Website
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Nitro Type Clone -->
+    <section id="project" class="p-5 bg-light text-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
 
-                <div class="description-column">
-                    <h2>Description:</h2>
-                    <h1> </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="col-md p-5">
+                    <h2>Nitro Type Clone</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Similique deleniti possimus magnam corporis ratione facere!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                        reiciendis eius autem eveniet mollitia, at asperiores suscipit
+                        quae similique laboriosam iste minus placeat odit velit quos,
+                        nulla architecto amet voluptates?
+                    </p>
+                    <a href="#" class="btn btn-dark mt-3">
+                        <i class="bi bi-chevron-right"></i> Visit Game
+                    </a>
+                </div>
+                
+                <div class="col-md">
+                    <img src="" class="img-fluid" alt="" />
                 </div>
 
             </div>
-
         </div>
+    </section>
+
+
+
+    <!-- Cards -->
+    <h1 class="text-center p-2">&lt--Certificates--&gt</h1>
+    <section>
+
+        <!-- Certificate Row 1 -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center g-4">
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Learn JavaScript</h3>
+                                <p class="card-text">
+                                    <em>Codecademy</em>
+                                    <br>Issued Jul 2022
+                                </p>
+                                <a href="https://www.codecademy.com/profiles/TahasinS" target='_blank' class="btn btn-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Learn HTML</h3>
+                                <p class="card-text">
+                                    <em>Codecademy</em>
+                                    <br>Issued Jul 2022
+                                </p>
+                                <a href="https://www.codecademy.com/profiles/TahasinS" target='_blank' class="btn btn-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Introduction to Programming Using Python</h3>
+                                <p class="card-text">
+                                    <em>Udacity</em>
+                                    <br>Issued Aug 2022
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Row 2 -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center g-4">
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Learn CSS</h3>
+                                <p class="card-text">
+                                    <em>Codecademy</em>
+                                    <br>Issued Sep 2022
+                                </p>
+                                <a href="https://www.codecademy.com/profiles/TahasinS" target='_blank' class="btn btn-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Fundamentals of Cybersecurity</h3>
+                                <p class="card-text">
+                                    <em>Codecademy</em>
+                                    <br>Issued Oct 2022
+                                </p>
+                                <a href="https://www.codecademy.com/profiles/TahasinS" target='_blank' class="btn btn-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Introduction to SQL</h3>
+                                <p class="card-text">
+                                    <em>DataCamp</em>
+                                    <br>Issued Nov 2022
+                                </p>
+                                <a href="certificates/sql_certificate.pdf" target='_blank' class="btn btn-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Row 3 -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center g-4">
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Learn JavaScript: Asynchronous Programming</h3>
+                                <p class="card-text">
+                                    <em>Codecademy</em>
+                                    <br>Issued Oct 2022
+                                </p>
+                                <a href="https://www.codecademy.com/profiles/TahasinS" target='_blank' class="btn btn-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Learn React</h3>
+                                <p class="card-text">
+                                    <em>Codecademy</em>
+                                    <br>In Progress
+                                </p>
+                                <a href="https://www.codecademy.com/profiles/TahasinS" target='_blank' class="btn btn-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-code-slash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Learn Node.js</h3>
+                                <p class="card-text">
+                                    <em>Codecademy</em>
+                                    <br>In Progress
+                                </p>
+                                <a href="https://www.codecademy.com/profiles/TahasinS" target='_blank' class="btn btn-primary">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+
+    <!-- Accordian -->
+    <section id='questions' class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">More Information</h2>
+            <div class="accordion accordion-flush" id="questions">
+
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question-one"
+                        >
+                        Wheres the best place I can reach you?
+                        </button>
+                    </h2>
+                    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                        totam tempora accusamus modi explicabo accusantium consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad
+                        velit doloremque at. Dignissimos praesentium necessitatibus
+                        natus corrupti cum consequatur aliquam! Minima molestias iure
+                        quam distinctio velit.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question-two"
+                        >
+                        What services do you offer?
+                        </button>
+                    </h2>
+                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                        totam tempora accusamus modi explicabo accusantium consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad
+                        velit doloremque at. Dignissimos praesentium necessitatibus
+                        natus corrupti cum consequatur aliquam! Minima molestias iure
+                        quam distinctio velit.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question-three"
+                        >
+                        What are you open to?
+                        </button>
+                    </h2>
+                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                        totam tempora accusamus modi explicabo accusantium consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad
+                        velit doloremque at. Dignissimos praesentium necessitatibus
+                        natus corrupti cum consequatur aliquam! Minima molestias iure
+                        quam distinctio velit.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question-four"
+                        >
+                        What are your goals?
+                        </button>
+                    </h2>
+                    <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                        totam tempora accusamus modi explicabo accusantium consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad
+                        velit doloremque at. Dignissimos praesentium necessitatibus
+                        natus corrupti cum consequatur aliquam! Minima molestias iure
+                        quam distinctio velit.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#question-five"
+                        >
+                        Where are you located?
+                        </button>
+                    </h2>
+                    <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                        totam tempora accusamus modi explicabo accusantium consequatur,
+                        praesentium rem quisquam molestias at quos vero. Officiis ad
+                        velit doloremque at. Dignissimos praesentium necessitatibus
+                        natus corrupti cum consequatur aliquam! Minima molestias iure
+                        quam distinctio velit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
         <!-- <div class="project">
             <h1 class="project-name">Snake (Hosted Website)</h1>
@@ -86,7 +494,7 @@
 
         </div> -->
 
-        <div class="project">
+        <!-- <div class="project">
             <h1 class="project-name">TypeRacer Clone (Python)</h1>
 
             <div class="row">
@@ -151,41 +559,33 @@
 
     </div>
 
-    <div id="achievements">
-        <h2></h2>
-    </div>
-
-    <div id="awards">
-        <h2></h2>
-    </div>
-
     <div id="certifications">
         <h2></h2>
-    </div>
+    </div> -->
 
 
 
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
 
 
 
-    <div id="footer">
+    <!-- <div id="footer">
         <h1>CONTACT</h1>
-        <div id="contact">
+        <div id="contact"> -->
             <!-- LINKEDIN ICON-->
-            <a href="https://www.linkedin.com/in/tahasin-shadat-76aabb241/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+            <!-- <a href="https://www.linkedin.com/in/tahasin-shadat-76aabb241/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a> -->
             <!-- GITHUB ICON -->
-            <a href="https://github.com/tahasinshadat" target="_blank"><i class="fa fa-github" style="font-size:30px"></i></a>
+            <!-- <a href="https://github.com/tahasinshadat" target="_blank"><i class="fa fa-github" style="font-size:30px"></i></a> -->
             <!-- PHONE -->
-            <a href="tel:9294065670"><i class="fa fa-phone" style="font-size:30px"></i></a>
+            <!-- <a href="tel:9294065670"><i class="fa fa-phone" style="font-size:30px"></i></a> -->
             <!-- INSTAGRAM ICON -->
-            <a href="https://www.instagram.com/the_tahasin/?hl=en" target="_blank"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+            <!-- <a href="https://www.instagram.com/the_tahasin/?hl=en" target="_blank"><i class="fa fa-instagram" style="font-size:30px"></i></a> -->
             <!-- MAIL ICON -->
-            <a href="mailto:tahasinshadat@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:30px"></i></a>
+            <!-- <a href="mailto:tahasinshadat@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:30px"></i></a> -->
 
-        </div>
+        <!-- </div>
 
         <div id="copyright">
             <h3>Created with HTML, JavaScript, CSS, and Git</h3>
@@ -196,7 +596,7 @@
 
         <button id="back_to_top_btn" title="Go to top"><i class="fa fa-angle-double-up" style="height:75px;font-size: 40px"></i></i></button>
 
-    </div>
+    </div> -->
 
 </body>
 </html>
