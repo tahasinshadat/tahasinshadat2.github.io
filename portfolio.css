@@ -134,4 +134,40 @@ body {
     margin-top: 1vh;
     margin-left: 0.75vh;
 }
-  
+
+.my-float {
+    transition: margin 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 2px rgb(51, 51, 51);
+}
+
+.my-float:hover {
+    margin-top: -1vh;
+}
+
+@media (max-width: 768px) {
+
+    .mobile-space {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
+}
+
+.my-icons {
+    font-size: 3.5vmin;
+    text-decoration: none !important;
+}
+
+.my-icons a {
+    color: white !important;
+    opacity: 0.5;
+}
+
+.my-icons a:hover {
+    color: rgb(233, 96, 96) !important;
+    opacity: 1;
+}
+
+.my-footer h3{
+    font-size: 2.25vmin;
+}
