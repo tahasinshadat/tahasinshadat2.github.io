@@ -34,9 +34,9 @@ body {
 
 .bg_color {
     background: black !important;
-    color: rgb(255, 255, 255) !important;
+    color: white !important;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .hoverer a{
@@ -142,6 +142,7 @@ body {
 
 .my-float:hover {
     margin-top: -1vh;
+    box-shadow: 0px 0px 10px 2px rgb(22, 29, 124);
 }
 
 @media (max-width: 768px) {
@@ -149,6 +150,25 @@ body {
     .mobile-space {
         padding-top: 15px !important;
         padding-bottom: 15px !important;
+    }
+
+    .my-footer h3{
+        font-size: 18px !important;
+    }
+    
+    .MOBILE-PROJECT p{
+        margin-left: -50px;
+        margin-right: -50px;
+    } 
+
+    #project .col-md {
+        text-align: center;
+    }
+    
+    #project .col-md img {
+        max-width: 120%;
+        height: auto;
+        margin-left: -3vh; 
     }
 
 }
@@ -169,5 +189,60 @@ body {
 }
 
 .my-footer h3{
-    font-size: 2.25vmin;
+    font-size: 30px;
+}
+
+.my-footer {
+    color: white;
+    padding: 1.5vh;
+    background: rgb(35, 85, 90);
+    margin-bottom: -2.25vh;
+}
+
+.btn-light {
+    font-size: 16px;
+    padding: 6px 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(13, 0, 201, 0.5);
+}
+
+.btn-dark {
+    font-size: 16px;
+    padding: 6px 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(13, 0, 201, 0.5);
+}
+
+.card-equal-height {
+    height: 100%;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    overflow: hidden;
+}
+  
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out;
+}
+  
+.navbar-nav .nav-link:hover::before {
+    left: 0;
 }

@@ -8,7 +8,7 @@
 body {
 	margin: 0;
 	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
+	font-weight: 500;
     background: rgb(45, 153, 163);
 }
 
@@ -46,7 +46,7 @@ body {
     height: .35vh;   
     width: 0;   
     display: block;   
-    transition: width 0.5s ease, background-color 0.5s ease; 
+    transition: width 0.3s ease, background-color 0.3s ease; 
 }  
 
 #nav a:hover::before {   
@@ -90,6 +90,7 @@ body {
 /* CONTACT INFO/FOOTER */
 
 #footer {
+    color: white;
     margin-top: -2.25vh;
     background: rgb(35, 85, 90);
     margin-bottom: -2.25vh;
@@ -101,19 +102,6 @@ body {
     justify-content: center;
 }
 
-#contact a {
-    color: white;
-    padding: 1vh;
-    opacity: 1;
-}
-
-#contact i {
-    font-size: 30px !important;
-}
-
-#contact a:hover {
-    color: rgb(189, 77, 77);
-}
 
 /* END OF CONTACT INFO/FOOTER */
 
